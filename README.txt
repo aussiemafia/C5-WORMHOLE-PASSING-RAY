@@ -88,3 +88,12 @@ REFERENCE REVIEW — 2 November 2026
 See Site running guide for all differences and newer CCP escalation changes.
 The archived records have not been blanket-replaced with older sheet values.
 This is a comparison, not certification of every current encounter or ship fit.
+
+BLUE LOOT STATION DIRECTORY
+Sell blue loot on the right cockpit monitor opens the high-sec NPC buyer directory.
+The snapshot scans all 70 known-space regions for the four Sleeper components.
+Use station search, region and item filters, then copy the exact station name.
+Order quantities and prices can change; check the in-game quote before selling.
+The custom sci-fi wordmark sits in the upper-left window, clear of the sun.
+The snapshot found 99 high-sec stations with NPC orders for all four items.
+All 280 regional market queries succeeded. CSV station list included.
