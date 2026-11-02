@@ -101,3 +101,6 @@ All 280 regional market queries succeeded. CSV station list included.
 Visual finish: panoramic deep-space artwork across information pages and Fortizar corporation citadel beneath the opening wordmark. Fortizar is an AI-assisted cutout based on CCP EVE Image Service type 35833. All assets are bundled.
 
 3 November 2026: approved broken-ring Expanse title with transparent background, cyan energy and original tagline. Fortizar moved beneath emblem.
+
+VISIT COUNTER — 3 November 2026
+GoatCounter uses existing aussiemafia account with dedicated path /C5-WORMHOLE-PASSING-RAY/. Expanse displays only that path, never the shared account TOTAL. The account-wide TOTAL on other sites includes all tracked properties; use per-path reporting to separate them. No historical visits were imported. Counts are visits, not distinct humans; blockers and bots affect measurement. Public count caches for up to four hours. Tracking runs only on production GitHub URL, not previews/offline. Add a future verified custom hostname to visits.js when switching domains.

@@ -34,3 +34,5 @@ body:not(.bridge-view) .workspace{min-height:100vh;background-image:linear-gradi
 
 /* Approved transparent broken-ring emblem. */
 .deck-title{left:8%;top:3%;width:46%;z-index:3}.deck-title .wordmark-title{margin:0}.wordmark-title img{filter:drop-shadow(0 2px 5px #0008)}.home-fortizar{left:17%;top:43%;width:29%;height:17%}.sensor-readout{top:57%}@media(max-width:650px){.deck-title{left:5%;top:65px;width:78%}.home-fortizar{left:14%;top:260px;width:58%;height:95px}.sensor-readout{top:365px}}
+
+footer{flex-wrap:wrap;gap:16px}.expanse-visits{display:flex;align-items:center;gap:12px;flex-wrap:wrap;flex-basis:100%;padding-bottom:14px;border-bottom:1px solid #69c6e333}.expanse-visits span{font:10px orbitron,sans-serif;letter-spacing:.16em;color:#98cfdf}.expanse-visits strong{font:22px orbitron,sans-serif;color:#d5f7ff;text-shadow:0 0 12px #6de5ff50}.expanse-visits small{font:13px rajdhani,sans-serif;letter-spacing:.04em;color:#8ba8b5}
