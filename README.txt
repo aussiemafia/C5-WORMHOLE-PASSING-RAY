@@ -71,3 +71,13 @@ This is a personal archive, not an official CCP or Triff product.
 Verified in a browser preview: homepage, fit switching, Core Garrison wave tables,
 system search, section navigation, and estimator arithmetic. Public portrait
 lookup depends on ESI availability and browser permissions.
+
+FINAL VISUAL FIXES
+All three monitor controls use perspective alignment against the artwork corners.
+Entire navigation rows are clickable, with hover and keyboard-focus highlights.
+Passing ships use AI-assisted transparent cutouts of the official renders;
+identification gallery retains unmodified official renders.
+
+TYPOGRAPHY
+Orbitron and Rajdhani fonts are bundled in bridge.css for offline use.
+Font licenses are included under assets/fonts.

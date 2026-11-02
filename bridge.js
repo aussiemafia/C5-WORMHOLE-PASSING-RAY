@@ -7,9 +7,18 @@ const bridgeStations=[
 function visual(name){return EXPANSE_VISUALS.ships.find(s=>s.name===name)}
 function shipImage(s,cls=''){return s?.image?`<img class="${cls}" src="${s.image}" alt="${esc(s.name)} — EVE ship render" loading="lazy">`:`<div class="no-image">Image unavailable</div>`}
 function sourceLink(url,label){return `<a class="source" href="${url}" target="_blank" rel="noopener">${label} ↗</a>`}
+let cockpitResizeObserver;
+function alignCockpitScreens(){
+ if(cockpitResizeObserver)cockpitResizeObserver.disconnect();
+ const deck=document.querySelector('.command-deck');if(!deck)return;
+ const geometry={"port": {"w": 350, "h": 150, "m": [1.024018956931947, -0.4236995137008242, 154.0, 0.19392560745797416, -0.01972292594857474, 654.0, 0.0003604812240262577, -0.0012345301534608779]}, "center": {"w": 450, "h": 160, "m": [0.8666666666666667, -0.8641193790149894, 641.0, 0.0, 0.11810760171306212, 635.0, 0.0, -0.0010305139186295503]}, "starboard": {"w": 350, "h": 150, "m": [0.3822444694104427, -1.4693248788789615, 1210.0, -0.17010911187054814, -0.08526399582767197, 647.0, -0.0003178655247663359, -0.0011180192421185546]}};
+ const fit=()=>{const scale=deck.clientWidth/1672;for(const [name,g] of Object.entries(geometry)){const el=deck.querySelector('.cockpit-screen.'+name);if(window.innerWidth<=650){el.removeAttribute('style');continue;}const [a,b,c,d,e,f,h,i]=g.m;el.style.cssText=`left:0;top:0;width:${g.w}px;height:${g.h}px;transform-origin:0 0;transform:matrix3d(${a*scale},${d*scale},0,${h},${b*scale},${e*scale},0,${i},0,0,1,0,${c*scale},${f*scale},0,1)`;}};
+ cockpitResizeObserver=new ResizeObserver(fit);cockpitResizeObserver.observe(deck);fit();
+}
 function cockpitHome(){
- const drifter=visual('Drifter Battleship'),dread=visual('Naglfar');
+ const drifter={...visual('Drifter Battleship'),image:'assets/drifter-cutout.webp'},dread={...visual('Naglfar'),image:'assets/naglfar-cutout.webp'};
  $('#app').innerHTML=`<section class="command-deck" aria-label="Interactive cockpit"><div class="viewport-stars" aria-hidden="true">${Array.from({length:65},(_,i)=>`<i style="left:${5+(i*37)%90}%;top:${8+(i*23)%78}%;animation-delay:-${i%29}s;animation-duration:${22+i%25}s"></i>`).join('')}</div><div class="viewport-mist" aria-hidden="true"></div><div class="deep-space-contact contact-one" aria-hidden="true">${shipImage(drifter)}</div><div class="deep-space-contact contact-two" aria-hidden="true">${shipImage(dread)}</div><div class="deck-title"><span>PASSING RAY / C5 COMMAND DECK</span><h1>THE EXPANSE</h1><p>Beyond the last connection.</p></div><div class="sensor-readout"><span class="signal-dot"></span> ANOIKIS / SIGNAL ACQUIRED<br><small>SELECT A STATION BELOW</small></div>${bridgeStations.map(s=>`<nav class="cockpit-screen ${s.className}" aria-label="${s.name}"><h2>${s.name}</h2>${s.links.map(([id,label])=>`<a href="#${id}"><span>${label}</span><b>›</b></a>`).join('')}</nav>`).join('')}<span class="deck-label">PERSONAL WORMHOLE INTELLIGENCE · ARCHIVE + FIELD DOSSIERS</span></section><section class="deck-foot"><span>19 FITS / 48 SITES / 2,603 SYSTEM RECORDS</span><a href="#coverage">Archive coverage & sources ↗</a></section>`;
+ alignCockpitScreens();
 }
 function dossierFigure(src,alt,caption){return `<figure class="dossier-figure"><img src="${src}" alt="${alt}" loading="lazy"><figcaption>${caption}</figcaption></figure>`}
 function drifters(){
