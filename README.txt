@@ -81,3 +81,10 @@ identification gallery retains unmodified official renders.
 TYPOGRAPHY
 Orbitron and Rajdhani fonts are bundled in bridge.css for offline use.
 Font licenses are included under assets/fonts.
+
+REFERENCE REVIEW — 2 November 2026
+48 site records compared with the supplied published spreadsheet (v1.19, 2020).
+34 structural/loot matches; 14 disagreements; 447 DPS/EHP field differences.
+See Site running guide for all differences and newer CCP escalation changes.
+The archived records have not been blanket-replaced with older sheet values.
+This is a comparison, not certification of every current encounter or ship fit.
