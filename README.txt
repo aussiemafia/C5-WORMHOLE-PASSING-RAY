@@ -99,3 +99,5 @@ The snapshot found 99 high-sec stations with NPC orders for all four items.
 All 280 regional market queries succeeded. CSV station list included.
 
 Visual finish: panoramic deep-space artwork across information pages and Fortizar corporation citadel beneath the opening wordmark. Fortizar is an AI-assisted cutout based on CCP EVE Image Service type 35833. All assets are bundled.
+
+3 November 2026: approved broken-ring Expanse title with transparent background, cyan energy and original tagline. Fortizar moved beneath emblem.
