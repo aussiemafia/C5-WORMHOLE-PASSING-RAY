@@ -1,4 +1,17 @@
-ANOIKIS ARCHIVE — PERSONAL EDITION FOR RAY
+REBUILT COCKPIT EDITION — 2 November 2026
+
+Extract the entire ZIP, keep all files together, and open index.html.
+This is the rebuilt version using recovered cockpit artwork and archive assets;
+it is not a recovered copy of the unavailable final session from last week.
+
+NEW FEATURES
+Navigation inside three cockpit monitors; animated stars, mist and passing ships;
+Drifter and Sleeper dossier; sourced historical storyline; 12 bundled EVE ship
+images; wormhole space guide; fullscreen, text-size and animation controls.
+The core website works offline. External references and pilot lookup need internet.
+Live destination: https://aussiemafia.github.io/C5-WORMHOLE-PASSING-RAY/
+
+THE EXPANSE — COMPLETE WEBSITE BACKUP
 Captured 27 October 2026
 
 START HERE
@@ -52,7 +65,7 @@ ATTRIBUTION
 Original public reference content, fits and page assets: Triff.Tools / Triff.
 EVE Online game data and portraits: CCP Games and respective rights holders.
 Supplemental summaries: EVE University Wiki, linked per note.
-Archive presentation and additional local tools: prepared for Ray with ChatGPT.
+Archive presentation and additional local tools: prepared with ChatGPT.
 This is a personal archive, not an official CCP or Triff product.
 
 Verified in a browser preview: homepage, fit switching, Core Garrison wave tables,
