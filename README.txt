@@ -104,3 +104,5 @@ Visual finish: panoramic deep-space artwork across information pages and Fortiza
 
 VISIT COUNTER — 3 November 2026
 GoatCounter uses existing aussiemafia account with dedicated path /C5-WORMHOLE-PASSING-RAY/. Expanse displays only that path, never the shared account TOTAL. The account-wide TOTAL on other sites includes all tracked properties; use per-path reporting to separate them. No historical visits were imported. Counts are visits, not distinct humans; blockers and bots affect measurement. Public count caches for up to four hours. Tracking runs only on production GitHub URL, not previews/offline. Add a future verified custom hostname to visits.js when switching domains.
+
+Counter fix: request the installation-date range (2 Nov UTC = 3 Nov Brisbane) to avoid the cached pre-installation missing-path response. Verified service returned 3 Expanse visits. Valid missing-path zero displays 0; script-load failure gets a clear status.
